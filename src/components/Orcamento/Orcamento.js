@@ -28,6 +28,7 @@ class Orcamento extends Component{
               formulario['largura']=this.refs.largura.value;
               formulario['comprimento']=this.refs.comprimento.value;
               formulario['alturaLateral']=this.refs.alturaLateral.value;
+              formulario['metodo']=METHOD_ORCAMENTO;
               
               enviarEmail(dados => this.setState(dados), formulario,METHOD_ORCAMENTO);
               this.refs.nome.value="";
