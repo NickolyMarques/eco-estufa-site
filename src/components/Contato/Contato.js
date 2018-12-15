@@ -21,6 +21,7 @@ class Contato extends Component{
         formulario['telefone']=this.refs.telefone.value;
         formulario['email']=this.refs.email.value;
         formulario['comentarios']=this.refs.comentarios.value;
+        formulario['metodo']=METHOD_CONTATO;
         enviarEmail(dados => this.setState(dados), formulario,METHOD_CONTATO);
         this.refs.nome.value="";
         this.refs.telefone.value="";
