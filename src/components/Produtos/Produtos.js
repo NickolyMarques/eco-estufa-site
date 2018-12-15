@@ -47,10 +47,12 @@ class Produtos extends Component{
     }
     
     createPaginationList() {
-        return (<div className="col-sm-12">
+        return (<div className="col-sm-12 container pagination">
         <Pagination
-          bsClass="pagination prueba"
-          activePage={this.state.activePage}
+          className="pagination"
+          itemClass= "page-item"
+          linkClass= "page-link"
+          activePage={this.state.paginaAtual}
           itemsCountPerPage={5}
           totalItemsCount={this.state.numelementos}
           pageRangeDisplayed={Math.ceil(this.state.numelementos/5)}
@@ -94,10 +96,10 @@ class Produtos extends Component{
         return(
             <div className="row">
                 {this.createIntroProduct()}
-                {this.state.erro && this.state.numelementos >0 &&
+                { this.state.numelementos >0 &&
                     this.productList()
                 }
-                {this.state.erro && this.state.numelementos > 0 &&
+                {this.state.numelementos > 0 &&
                     this.createPaginationList()
                 }
 

@@ -19,3 +19,8 @@ h1#produto{
     margin-top: 50px;
     text-align: center;
 }
+
+div.col-sm-12.container.pagination{
+    display: flex;
+    justify-content: center;
+}
