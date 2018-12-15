@@ -5,9 +5,9 @@ import {recuperaProdutos} from "../../services/recuperaProdutosService";
 
 class Galeria extends Component{
 
-    
- /*IMAGES =
-[{
+  obtainImages()   {
+      let IMAGES=[];
+  return IMAGES =[{
         src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
         thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
         thumbnailWidth: 320,
@@ -29,7 +29,8 @@ class Galeria extends Component{
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
-}]*/
+}];
+  }
 
 
   
@@ -37,9 +38,9 @@ class Galeria extends Component{
     render(){
         
         return(
-            <div></div>
-            /*<Gallery images={IMAGES}/>,
-        document.getElementById('example-0')*/
+           
+            <Gallery images={this.obtainImages()}/>,
+        document.getElementById('example-0')
             
             
         );
