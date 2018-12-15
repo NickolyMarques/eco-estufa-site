@@ -1,0 +1,21 @@
+.jumbotron.produtos{
+    margin-top:50px;
+    
+}
+p.strong{
+    font-weight: bold;
+}
+p.padding15t{
+    padding-top:15px;
+}
+
+.produtos .card{
+    min-height: 515px;
+    margin-bottom: 35px;
+    max-height: 500px;
+}
+h1#produto{
+
+    margin-top: 50px;
+    text-align: center;
+}

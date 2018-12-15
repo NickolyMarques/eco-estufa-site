@@ -1,0 +1,49 @@
+#faleConosco{
+    background: #2d3e50;
+    color: #aaa;
+}
+.box-fale-conosco{
+    background: url(./img/estufas-frota-2018-10.jpg) center center no-repeat;
+    width: 98%;
+    padding: 2em;
+    height: 88%;
+    margin-top: 5%;
+}
+
+#faleConosco .bg_overlay {
+    width: 94%;
+    height: 250px;
+    background: url(./img/overlay.png) center center repeat;
+    margin: 2% auto;
+    padding-top: 10px;
+}
+.col-sm-12.col-md-6.paddingLeft{
+    padding-left: 2%;
+}
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 55.2%;
+    position: relative;
+    height: 0;
+}
+.content-bg {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 1em 0 1em;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #estufas4anos{
+    color: #bcbbbb;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  
+  @media only screen and (max-width: 450px){
+    #faleConosco .bg_overlay{
+        height:425px;
+    }
+  }
+  

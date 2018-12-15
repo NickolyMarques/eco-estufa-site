@@ -1,0 +1,32 @@
+@media (min-width: 48em)
+{
+    #logo-eco-estufas {
+        background: url(./img/logo.png) center center no-repeat;
+        background-size: 100px;
+        padding: 35px 70px;
+        margin-left: 0px;
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+}
+.fixed-top{
+    box-shadow: 0px 0px 5px #8b8888;
+}
+
+.fa-youtube-play{
+color:red;
+}
+.fa-facebook-square{
+    color:rgb(41, 72, 125)
+}
+.fa-whatsapp{
+    color:#25d366;
+}
+#redesSociais li{
+    white-space: nowrap;
+    padding-right: 5px;
+    padding-top:25px;
+    font-size: 12px;
+}
+

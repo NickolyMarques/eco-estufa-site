@@ -1,0 +1,13 @@
+#orcamento{
+    margin-top:5%;
+}
+@media (max-width: 576px){
+    #orcamento{
+        margin-top: 100px;
+    }
+}
+@media (min-width:577px) and (max-width:1200px){
+    #orcamento{
+        margin-top: 125px;
+    }
+}
