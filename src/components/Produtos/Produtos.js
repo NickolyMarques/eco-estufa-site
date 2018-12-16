@@ -31,7 +31,7 @@ class Produtos extends Component{
             return(
                 
                 <div class="col-sm-6">
-                <div key = {indice} class="card" >
+                <div key = {indice} className="card" >
                 <img class="card-img-top" src={"/produtos/"+item.imagem} alt={item.produto}/>
                 <div class="card-body">
                   <h5 class="card-title">{item.produto}</h5>
