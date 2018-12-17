@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import Gallery from 'react-grid-gallery';
 import {galeriaService,listaImages} from "../../services/galeriaService";
 import baguetteBox from 'baguettebox.js';
-import LightboxEco from './LightboxEco';
 import {Link} from 'react-router-dom';
-import {Switch, Route} from "react-router-dom";
+import scrollToComponent from 'react-scroll-to-component';
 import './Galeria.css';
 
 
@@ -20,13 +18,15 @@ class Galeria extends Component{
     }
     componentDidMount(){
         galeriaService(dados => this.setState(dados));
+        scrollToComponent(this.refs.galeria);
     }
     
     mountGallery(){
         return this.state.listaGaleria.map((item , indice) => {
             return(
-                <div key={indice} className="col-md-6 col-lg-4 item zoom-on-hover">
-                    <Link className="lightbox" to={{ pathname: '/detalhe-galeria', state: { diretorio: item.diretorio } }}>
+                <div key={indice} className="col-md-6 col-lg-4 item zoom-on-hover" >
+                    <Link className="lightbox" to={{ pathname: '/detalhe-galeria', state: { diretorio: item.diretorio,
+                    title:item.descricao } }}>
                     
                         <img className="img-fluid image" src={item.src}/>
                         <span className="description">
@@ -45,7 +45,8 @@ class Galeria extends Component{
 
         return(
             
-            <section class="gallery-block compact-gallery">
+            <section class="gallery-block compact-gallery with-margin-top">
+            <h1 ref="galeria" id="produto">Galeria Eco Estufas</h1>
                 <div class="container">
                     <div className="row no-gutters">
                         {this.mountGallery()}

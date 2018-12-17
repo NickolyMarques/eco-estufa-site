@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-import Gallery from 'react-grid-gallery';
-import {galeriaService,listaImages} from "../../services/galeriaService";
-import baguetteBox from 'baguettebox.js';
 import LightboxEco from './LightboxEco';
-import {Link} from 'react-router-dom';
-import { HashLink as AnchoredLink } from 'react-router-hash-link'; 
+import scrollToComponent from 'react-scroll-to-component';
 import './Galeria.css';
 
 
@@ -18,13 +14,17 @@ class GaleriaDetalhe extends Component{
 
         }
     }
-
+    componentDidMount(){
+        scrollToComponent(this.refs.galeriaDetalhe);
+    }
     render(){
         
         return(
-            <div className="container" id="quemsomos">
+            
+            <div className="container with-margin-top" >
+            <h1 ref="galeriaDetalhe" id="produto">{this.props.location.state.title}</h1>
                <div className="row">
-                    <div className="col with-margin-top">
+                    <div className="col">
             
                         <LightboxEco diretorio={this.props.location.state.diretorio} />
                         {document.getElementById('lightboxEco')}
