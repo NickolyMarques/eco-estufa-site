@@ -22,11 +22,13 @@ class GaleriaDetalhe extends Component{
         return(
             
             <div className="container with-margin-top" >
-            <h1 ref="galeriaDetalhe" id="produto">{this.props.location.state.title}</h1>
+            <h1 className="content-head" ref="galeriaDetalhe" id="produto">{this.props.location.state != undefined &&
+                this.props.location.state.title}</h1>
                <div className="row">
                     <div className="col">
             
-                        <LightboxEco diretorio={this.props.location.state.diretorio} />
+                        <LightboxEco diretorio={this.props.location.state != undefined && 
+                            this.props.location.state.diretorio} />
                         {document.getElementById('lightboxEco')}
                     </div>
                 </div>

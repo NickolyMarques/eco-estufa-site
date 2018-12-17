@@ -45,8 +45,8 @@ class Galeria extends Component{
 
         return(
             
-            <section class="gallery-block compact-gallery with-margin-top">
-            <h1 ref="galeria" id="produto">Galeria Eco Estufas</h1>
+            <section class="gallery-block compact-gallery">
+            <h1 className="content-head" ref="galeria" id="produto">Galeria Eco Estufas</h1>
                 <div class="container">
                     <div className="row no-gutters">
                         {this.mountGallery()}

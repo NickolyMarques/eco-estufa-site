@@ -13,7 +13,7 @@ class QuemSomos extends Component{
             <div className="container" id="quemsomos">
              <div className="row">
              <div className="col">
-            <h3 ref="quemsomos" className="content-head">Quem Somos</h3>
+            <h1 ref="quemsomos" className="content-head">Quem Somos</h1>
             <p>A Eco Estufas Agrícolas Ltda nasceu em 2012, unindo a experiência de 10 anos em plasticultura com a experiência de 20 anos em tecnologia na produção industrial, sempre buscando a melhor solução em "Cultivo Protegido, Cultivo Controlado e Coberturas em Geral".</p>
             <p>Trabalhamos com materiais de excelente qualidade e com garantia comprovada, tubos e perfis metálicos galvanizados a fogo, sempre seguindo normas técnicas da ABNT(Associação Brasileiras de Normas Técnicas). Nossa equipe altamente qualificada, estará sempre pronta para elaborar projetos que atendam as necessidades de nossos clientes, buscando um atendimento personalizado desde o orçamento até o acompanhamento Pós-venda.</p>
             <p>Situada em Bragança Paulista, mais conhecida com região Bragantina e vizinha de Atibaia, uma das principais regiões produtoras de flores do país, estamos próximo a capital de São Paulo (90km), facilitando a logística de entrega para qualquer lugar do Brasil.</p>

@@ -64,9 +64,9 @@ class Produtos extends Component{
     createIntroProduct(){
 
         return (<div className="col-sm-12">
-            <h1 ref="produto" id="produto">Conheça os nossos Produtos</h1>
+            <h1 ref="produto" id="produto" className="content-head">Conheça os nossos Produtos</h1>
             <div className="jumbotron produtos">
-            <h3>Aplicações das Estufas Agrícolas (Casas de vegetação)</h3> 
+            <h3 className="content-head">Aplicações das Estufas Agrícolas (Casas de vegetação)</h3> 
             <p className="strong padding15t">Modelos:</p> 
             <ul className="list-group">
                 <li className="list-group-item">Estufas Galvanizadas modelo Maxx.</li>
