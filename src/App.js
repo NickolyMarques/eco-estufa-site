@@ -16,6 +16,7 @@ import Produtos from './components/Produtos/Produtos';
 
 
 import Galeria from './components/Galeria/Galeria';
+import GaleriaDetalhe from './components/Galeria/GaleriaDetalhe';
 import Orcamento from './components/Orcamento/Orcamento';
 
 class App extends Component {
@@ -49,6 +50,14 @@ class App extends Component {
         <div className="container">
         <div className="row">
           <Galeria/>
+          <Contato/>
+          </div>    
+        </div>
+        } />
+        <Route path="/detalhe-galeria" render={props =>
+        <div className="container">
+        <div className="row">
+          <GaleriaDetalhe {...props}/>
           <Contato/>
           </div>    
         </div>

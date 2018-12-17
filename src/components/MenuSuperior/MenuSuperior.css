@@ -29,4 +29,12 @@ color:red;
     padding-top:25px;
     font-size: 12px;
 }
-
+@media (max-width: 47.9em)
+{
+#logo-eco-estufas {
+background: url(./img/logo.png) center center no-repeat;
+background-size: 75px;
+padding: 25px 50px;
+margin-left: 0px;
+}
+}
